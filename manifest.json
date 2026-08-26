@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing URL Detector",
+  "version": "1.0.0",
+  "description": "A browser extension for detecting potential phishing websites.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+ "permissions": [
+    "tabs",
+    "activeTab"
+],
+"host_permissions": [
+    "http://127.0.0.1:5000/*"
+],
+
+"icons": {
+    "128": "icons/icon128.png"
+}
+}

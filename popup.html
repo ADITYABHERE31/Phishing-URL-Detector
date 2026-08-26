@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <header class="header">
+        <span class="shield-icon">🛡</span>
+        <h1>PhishGuard</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="block">
+            <p class="block-label">Scanning</p>
+            <p id="url" class="url-value">Checking URL...</p>
+        </section>
+
+        <section id="status" class="status-banner">Checking...</section>
+
+        <section class="block">
+            <p id="risk" class="ml-line">ML Result: Checking...</p>
+        </section>
+
+        <section id="reasons" class="reasons-block"></section>
+
+        <section class="block manual-check-block">
+            <p class="block-label">Check a different URL</p>
+            <div class="manual-row">
+                <input type="text" id="manual-url-input" placeholder="Paste a URL to check..." />
+                <button id="manual-check-btn">Check</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        Heuristic + ML analysis of URL structure only. Not a guarantee of safety.
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>
